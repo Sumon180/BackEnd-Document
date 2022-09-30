@@ -106,13 +106,51 @@ fs.exists("demo2.text", (result) => {
   }
 });
 ```
+```javascript
+fs.existsSync("demo2.text");
+```
+### Chapter-3
+First Server<br/>
+```javascrip
+const http = require("http"),
+  port = 5000,
+  hostName = "127.0.0.1";
+
+const myServer = http.createServer((req, res) => {
+  res.end("<h1>Hi, I'm your first server</h1>");
+});
+
+myServer.listen(port, hostName, () => {
+  console.log(`Your server is running at http://${hostName}:${port}`);
+});
+
+```
+### Chapter-4
+First Server<br/>
+```javascrip
+const http = require("http"),
+  port = 3000,
+  hostName = "127.0.0.1";
+
+const myServer = http.createServer((req, res) => {
+  res.writeHead(202, { "Content-Type": "text/html" });
+  res.write("<h1>I'm Server</h1>");
+  res.write("<h2>I'm Server</h2>");
+  res.end();
+});
+
+
+myServer.listen(port, hostName, () => {
+  console.log(`Your server is running at http://${hostName}:${port}`);
+});
+```
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ex rem
 harum itaque nostrum repellat culpa, error inventore doloribus voluptates.<p/>  
 <i>This is First "README" file</i>
 
 `this is inline`
 ### Chapter-6
-First Srver<br/>
+First Server<br/>
 ```javascript
 const fstat = require("fs");
 const http = require("http");
