@@ -1,10 +1,6 @@
 # BackEnd-Document
 Backend Document
 <!-- Back-End documentation -->
-
-Sumon Hossain<br/>
-Seconde Step
-
 ---
 
 # Node.js part
