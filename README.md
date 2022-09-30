@@ -10,15 +10,106 @@ Seconde Step
 # Node.js part
 
 ### Chapter-1
+```javascript
+const { getName } = require("./student");
+console.log(getName());
+```
+```javascript
+exports.getName = () => {
+  return "Sumon Hossain";
+};
 
+const age = () => {
+  return "25";
+};
+
+const cgpa = 3.94;
+
+// exports.getName = getName;
+// exports.agee = age;
+// exports.Cgpa = cgpa;
+
+// Or
+
+module.exports = {
+  age,
+  cgpa,
+};
+```
+### Chapter-2
+```javascript
+const fs = require("fs");
+
+fs.writeFile(
+  "demo.txt",
+  "This is sample text , My Name is Sumon hoassin",
+  (err) => {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log("Succesful");
+    }
+  }
+);
+```
+```javascript
+const fs = require("fs");
+fs.appendFile("demo.txt", " & age 25 ", (err) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log("Succesful");
+  }
+});
+```
+```javascript
+const fs = require("fs");
+fs.readFile("demo.txt", "utf-8", (err, data) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(data);
+  }
+});
+```
+```javascript
+const fs = require("fs");
+fs.rename("demo.txt", "demo2.text", (err) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log("succesfull");
+  }
+});
+```
+```javascript
+const fs = require("fs");
+fs.unlink("demo2.text", (err) => {
+  //for delete
+  if (err) {
+    console.log(err);
+  } else {
+    console.log("succesfull");
+  }
+});
+```
+```javascript
+const fs = require("fs");
+fs.exists("demo2.text", (result) => {
+  //for delete
+  if (result) {
+    console.log("Found");
+  } else {
+    console.log("not found");
+  }
+});
+```
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ex rem
-harum itaque nostrum repellat culpa, error inventore doloribus voluptates
-laboriosam sequi. Corporis et ipsam atque nemo suscipit tenetur est
-tempore sit quam, amet hic quia.<p/>  
+harum itaque nostrum repellat culpa, error inventore doloribus voluptates.<p/>  
 <i>This is First "README" file</i>
 
 `this is inline`
-
+### Chapter-6
 ```javascript
 const fstat = require("fs");
 const http = require("http");
