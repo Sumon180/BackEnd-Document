@@ -111,7 +111,7 @@ fs.existsSync("demo2.text");
 ```
 ### Chapter-3
 First Server<br/>
-```javascrip
+```javascript
 const http = require("http"),
   port = 5000,
   hostName = "127.0.0.1";
@@ -127,7 +127,7 @@ myServer.listen(port, hostName, () => {
 ```
 ### Chapter-4
 First Server<br/>
-```javascrip
+```javascript
 const http = require("http"),
   port = 3000,
   hostName = "127.0.0.1";
