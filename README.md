@@ -21,6 +21,22 @@ Output
 const { getName } = require("./student");
 console.log(getName());
 ```
+
+Rule-1
+```javascript
+const getName = () => {
+  return "Sumon Hossain";  
+};
+const age = () => {
+  return "25";
+};
+
+const cgpa = 3.94;
+
+exports.getName = getName;
+exports.agee = age;
+exports.Cgpa = cgpa;
+```
 ```javascript
 const getName = () => {
   return "Sumon Hossain";  
@@ -39,25 +55,12 @@ module.exports = {
   cgpa,
 };
 ```
-Rule-1
-```javascript
-const getName = () => {
-  return "Sumon Hossain";  
-};
-const age = () => {
-  return "25";
-};
-
-const cgpa = 3.94;
-
-exports.getName = getName;
-exports.agee = age;
-exports.Cgpa = cgpa;
 Output
 ```javascript
 const s1 = require('./student');
 consol.log(s1.getName());
 consol.log(s1.agee());
+consol.log(s1.Cgpa());
 
 ```
 ### Chapter-2
