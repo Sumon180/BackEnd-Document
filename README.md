@@ -16,6 +16,7 @@ exports.getName = () => {
   return "Sumon Hossain";
 };
 ```
+Output
 ```javascript
 const { getName } = require("./student");
 console.log(getName());
@@ -23,7 +24,26 @@ console.log(getName());
 ```javascript
 const getName = () => {
   return "Sumon Hossain";  
-  
+};
+const age = () => {
+  return "25";
+};
+
+const cgpa = 3.94;
+
+
+
+module.exports = {
+  getName,
+  age,
+  cgpa,
+};
+```
+Rule-1
+```javascript
+const getName = () => {
+  return "Sumon Hossain";  
+};
 const age = () => {
   return "25";
 };
@@ -33,14 +53,12 @@ const cgpa = 3.94;
 exports.getName = getName;
 exports.agee = age;
 exports.Cgpa = cgpa;
+Output
+```javascript
+const s1 = require('./student');
+consol.log(s1.getName());
+consol.log(s1.agee());
 
-// Or
-
-module.exports = {
-  getName,
-  age,
-  cgpa,
-};
 ```
 ### Chapter-2
 Built in Modules<br/>
