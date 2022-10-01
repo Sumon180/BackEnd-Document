@@ -222,6 +222,19 @@ server.listen(port, hostName, () => {
   console.log(`Server is running at http://${hostName}:${port}`);
 });
 ```
+# Express_js
+---
+### Server Create by express
+```javascript
+const express = require("express"),
+  app = express(),
+  port = 3000,
+  hostName = "127.0.0.2";
+
+app.listen(port, () => {
+  console.log(`server is running at http://${hostName}:${port}`);
+});
+```
 HTML
 ```html
 <!DOCTYPE html>
