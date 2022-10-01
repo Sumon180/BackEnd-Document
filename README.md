@@ -4,9 +4,12 @@ Backend Document
 ---
 
 # Node.js part
-
+#### type of modules
+1. Local modules (own created modules)
+2. Built-in modules (node.js own modules)-http,url,path,fs
+3. External modules (managed by npm)
 ### Chapter-1
-Module<br/>
+Local Module<br/>
 ```javascript
 const { getName } = require("./student");
 console.log(getName());
@@ -34,7 +37,14 @@ module.exports = {
 };
 ```
 ### Chapter-2
-Built in Module<br/>
+Built in Modules<br/>
+Method of Fs  
+1. writeFile()
+2. appendFile()
+3. readFile()
+4. rename()
+5. unlink()
+6. Exists()
 ```javascript
 const fs = require("fs");
 
