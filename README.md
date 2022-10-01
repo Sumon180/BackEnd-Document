@@ -145,8 +145,17 @@ fs.exists("demo2.text", (result) => {
 ```javascript
 fs.existsSync("demo2.text");
 ```
+
 ### Chapter-3
-First Server<br/>
+Server create<br/>
+```javascript
+const http = require("http");
+http.createServer((req, res) => {
+res.end("Hello, I am your First server")
+}).listen(3000);
+
+```
+And modeify more
 ```javascript
 const http = require("http"),
   port = 5000,
@@ -161,16 +170,6 @@ myServer.listen(port, hostName, () => {
 });
 
 ```
-### Chapter-4
-Server create<br/>
-```javascript
-const http = require("http");
-http.createServer((req, res) => {
-res.end("Hello, I am your First server")
-}).listen(3000);
-
-```
-And
 ```javascript
 const http = require("http"),
   port = 3000,
