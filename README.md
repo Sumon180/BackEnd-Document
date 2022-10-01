@@ -55,7 +55,7 @@ consol.log(s1.agee());
 consol.log(s1.Cgpa());
 
 ```
-rule-2 seperate export
+Rule-2 seperate export
 ```javascript
 exports.getName = () => {
   return "Sumon Hossain";
@@ -162,7 +162,15 @@ myServer.listen(port, hostName, () => {
 
 ```
 ### Chapter-4
-First Server<br/>
+Server create<br/>
+```javascript
+const http = require("http");
+http.createServer((req, res) => {
+res.end("Hello, I am your First server")
+}).listen(3000);
+
+```
+And
 ```javascript
 const http = require("http"),
   port = 3000,
