@@ -1,5 +1,4 @@
-# BackEnd-Document
-Backend Document
+# BackEnd-Documentation
 <!-- Back-End documentation -->
 ---
 
@@ -10,28 +9,35 @@ Backend Document
 3. External modules (managed by npm)
 ### Chapter-1
 Local Module<br/>
+
+  
+```javascript
+exports.getName = () => {
+  return "Sumon Hossain";
+};
+```
 ```javascript
 const { getName } = require("./student");
 console.log(getName());
 ```
 ```javascript
-exports.getName = () => {
-  return "Sumon Hossain";
-};
-
+const getName = () => {
+  return "Sumon Hossain";  
+  
 const age = () => {
   return "25";
 };
 
 const cgpa = 3.94;
 
-// exports.getName = getName;
-// exports.agee = age;
-// exports.Cgpa = cgpa;
+exports.getName = getName;
+exports.agee = age;
+exports.Cgpa = cgpa;
 
 // Or
 
 module.exports = {
+  getName,
   age,
   cgpa,
 };
