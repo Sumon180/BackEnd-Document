@@ -78,9 +78,7 @@ Method of Fs
 ```javascript
 const fs = require("fs");
 
-fs.writeFile(
-  "demo.txt",
-  "This is sample text , My Name is Sumon hoassin",
+fs.writeFile("demo.txt","This is sample text , My Name is Sumon hoassin",
   (err) => {
     if (err) {
       console.log(err);
@@ -224,7 +222,7 @@ server.listen(port, hostName, () => {
   console.log(`Server is running at http://${hostName}:${port}`);
 });
 ```
-
+HTML
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -246,7 +244,7 @@ server.listen(port, hostName, () => {
   </body>
 </html>
 ```
-
+CSS
 ```css
 .header {
   background: green;
