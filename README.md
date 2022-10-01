@@ -11,18 +11,9 @@
 Local Module<br/>
 
   
-```javascript
-exports.getName = () => {
-  return "Sumon Hossain";
-};
-```
-Output
-```javascript
-const { getName } = require("./student");
-console.log(getName());
-```
 
-Rule-1
+
+Rule-1 export all
 ```javascript
 const getName = () => {
   return "Sumon Hossain";  
@@ -37,6 +28,7 @@ exports.getName = getName;
 exports.agee = age;
 exports.Cgpa = cgpa;
 ```
+Or
 ```javascript
 const getName = () => {
   return "Sumon Hossain";  
@@ -62,6 +54,17 @@ consol.log(s1.getName());
 consol.log(s1.agee());
 consol.log(s1.Cgpa());
 
+```
+rule-2 seperate export
+```javascript
+exports.getName = () => {
+  return "Sumon Hossain";
+};
+```
+Output
+```javascript
+const { getName } = require("./student");
+console.log(getName());
 ```
 ### Chapter-2
 Built in Modules<br/>
