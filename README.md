@@ -3,10 +3,7 @@
 ---  
 # Express_js
 ---
-## Setup at `packege.json`
-```
-"start": "nodemon index.js"
-```
+
 ### Server Create by express `index.js`
 ```javascript
 const express = require("express"),
@@ -21,6 +18,10 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`server is running at http://${hostName}:${port}`);
 });
+```
+#### Setup at `packege.json`
+```
+"start": "nodemon index.js"
 ```
 
 # Node.js part
