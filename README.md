@@ -4,7 +4,7 @@
 # Express_js
 ---
 
-### Server Create by express `index.js`
+### Express Server Create `index.js`
 ```javascript
 const express = require("express"),
   app = express(),
