@@ -2,7 +2,6 @@
 <!-- Back-End documentation -->
 ---  
 # Express_js
----
 ### Express Server Create Shortcut
 npx express-generator
 ### Express Server Create `index.js`
