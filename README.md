@@ -3,6 +3,10 @@
 ---  
 # Express_js
 ---
+## Setup at `packege.json`
+```
+"start": "nodemon index.js"
+```
 ### Server Create by express `index.js`
 ```javascript
 const express = require("express"),
