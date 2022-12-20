@@ -29,21 +29,26 @@ const express = require("express"),
   port = 3000,
   hostName = "127.0.0.2";  
   
-app.get('/', (req, res) => {
+  // Home pages
+router.get("/", (req, res) => {
   res.send('Hello World!')
-})
-app.post('/create', (req, res) => {
+});
+
+//create user
+router.post("/user", (req, res) => {
   res.send('Hello World!')
-})
-app.post('/update/:id', (req, res) => {
+});
+
+// delete user
+router.delete("/userRemove/:id",  (req, res) => {
   res.send('Hello World!')
-})
-app.put('/update', (req, res) => {
+});
+
+// Update user
+router.get("/update/:id", updateContact);
+router.put("/update/:id", (req, res) => {
   res.send('Hello World!')
-})
-app.delete('/delete/:id', (req, res) => {
-  res.send('Hello World!')
-})
+});  
 
 app.listen(port, () => {
   console.log(`server is running at http://${hostName}:${port}`);
