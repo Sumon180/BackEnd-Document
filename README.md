@@ -3,7 +3,7 @@
 ## Express_js
 ### Express Server Create Shortcut
 npx express-generator
-### Express Server Create `index.js`
+### Express basic Server Create `index.js`
 ```javascript
 const express = require("express"),
   app = express(),
@@ -21,6 +21,33 @@ app.listen(port, () => {
 #### Setup at `packege.json`
 ```
 "start": "nodemon index.js"
+```
+### Express Server Create & Routing `index.js`
+```javascript
+const express = require("express"),
+  app = express(),
+  port = 3000,
+  hostName = "127.0.0.2";  
+  
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+app.post('/create', (req, res) => {
+  res.send('Hello World!')
+})
+app.post('/update/:id', (req, res) => {
+  res.send('Hello World!')
+})
+app.put('/update', (req, res) => {
+  res.send('Hello World!')
+})
+app.delete('/delete/:id', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`server is running at http://${hostName}:${port}`);
+});
 ```
 
 # Node.js part
